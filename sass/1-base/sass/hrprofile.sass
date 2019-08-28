@@ -1,0 +1,285 @@
+.m-0
+	margin : 0 !important
+
+
+
+header
+	+clearfix
+	position : relative
+	display : block
+	margin-top : 1em
+	margin-bottom : 1em
+
+.header-left
+	float : left
+	width : 30%
+.avatar
+	+box-shadow(-6px 2px 15px 2px #efefef)
+	+border-radius(50%)
+	border : 1px solid #f2f2f2
+	display : block
+	margin : 0 auto
+	padding : 1em
+	width : 120px
+	height : 120px
+	overflow : hidden
+
+h4.title, .today
+	font-size : 1.2em
+	color : $fresh_pink
+	margin : 0
+	line-height : 30px
+	box-sizing : border-box
+	display : block
+.today
+	font-size : 0.8em
+	font-weight : 100
+
+ul.header-list
+	display : block
+	float : right
+	li
+		display : inline-block
+		float : left
+		margin-right : 2em
+		line-height : 60px
+		color : $fresh_blue
+		text-transform : none
+		padding-bottom : 1em
+		border : 0
+		cursor : pointer
+
+ul.header-list li.active
+			border-bottom: 3px solid $fresh_pink
+			color : $fresh_pink
+
+.hello
+	display : block
+	color : $fresh_pink				
+
+.pg-wrap
+	margin : 0 20px
+	display : block
+	width : calc(100% - 40px)
+
+.day-heading
+	font-size : 1em
+	color : $black
+	line-height : 1.8em
+
+.panels
+	margin-top : 2em	
+
+.job_posted_btn
+	width : 150px
+	text-align : center
+	+box-shadow(-3px 2px 3px 0px #efefef)
+	background-color : $orange_shade_1
+	color : $white
+	margin-left : auto
+	margin-right : auto
+	padding-left : 0 !important
+	display : block
+
+.job_posted
+	form
+		span
+			font-size : 0.8em
+
+
+.tab_title
+	display : block
+	margin-top : 0
+	text-align : center
+	background-color : $fresh_green
+	padding : 0.4em 1em
+	color : $white
+	font-weight : 100 !important
+	font-family : $font-stack-system
+	font-size : 2em
+
+
+.search-cand-wrap
+	position : relative
+	.search_candidate
+		padding : 0em
+		position : relative
+		display : block
+		line-height : 4em
+		padding-left : 2em
+	.search_candidate_btn
+		font-size : 0.8em
+		text-align : center
+		background-color : $orange_shade_1
+		+box-sizing(border-box)
+		color : $white
+		position : absolute
+		line-height : 4em
+		padding-left : 0
+		top : 0
+		right : 0
+		margin : 0
+		border : 0
+		width : 15%
+		z-index : 1
+
+.panels
+	form
+		input
+			padding : 0
+			line-height : 2em
+			padding-left : 2em
+
+.w1
+	color : $red
+
+.w2
+	color : $red
+	font-weight : 100
+
+.b-0
+	border : 0 !important
+
+%default__img
+	width : 40px
+	height : 40px
+	+border-radius(50%)
+	z-index : 1
+.load_more_btn
+	border : 0
+	padding : 0.6em 2em
+	font-size : 0.8em
+	line-height : 2em
+	display : block
+	margin-bottom : 2em
+.gif_loader
+	@extend %default__img	
+	margin : 0 auto
+	opacity : 0
+.gif_loader.active
+	opacity : 1	
+
+.result_fade
+	animation-name : fadeIn
+	animation-fill-mode : both
+	animation-duration : 1s
+	opacity : 0
+
+#candidateSearchResult, .search__result__wraper
+	position : relative
+	transition : all 0.5s ease-in-out
+
+%jobBox
+	position : relative
+	background-color : $white
+
+.job__wrap, .candidate__wrap
+	@extend %jobBox
+	+box-shadow(1px 2px 6px 2px #efefef)
+	border : 1px solid #f2f2f2
+	padding : 1.4em 1em
+	float : left
+	margin : 0 auto
+	width : calc(100% - 40px)
+
+.job
+	border : 0
+	border-right : 1px solid $fresh_red
+	float : left
+	padding : 0 1.1em
+	width : 75%
+	.job__title, .cand__name
+		font-size : 1em
+		font-weight : 600
+		margin : 0
+		line-height : 3em
+	.company, .cand__username, .cand__email, .cand__qualification
+		font-weight : 100
+		text-transform : none
+		margin : 0
+		line-height : 2em
+	.skills,.subtitle
+		font-size : 0.8em
+		line-height : 2em
+		color : $red
+	.subtitle
+		color : $black
+		float : left
+		.exp,.count
+			float : left
+			width : 100%
+
+.cand__desc
+	font-size : 0.9em
+	line-height : 1.4em
+	color : $fresh_red
+.job__posted__by
+	float : right
+	padding : 0
+	background-color : $white
+	display : block
+	margin : 0
+	width : calc(100% - 40px - 75%)
+	.jobpostedbyavatar
+		@extend %default__img
+		border : 1px solid #f7f7f7
+		display : block
+		margin : 0 auto
+		overflow : hidden
+		padding : 14px
+		
+	.on__posted
+		display : block
+		padding : 0.4em
+		padding-left : 1em
+		margin : 0	auto
+		font-size : 0.9em
+		line-height : 1.1em
+		text-align : left
+
+section
+	+clearfix
+	position : relative
+	margin-bottom : 1em
+
+.all
+	text-align : left
+	display : block
+	font-size : 0.9em
+.search__checkbox
+	width : auto
+
+.cand__job
+	width : calc(100% - 40px)
+	border : 0
+	display : block
+	width : 100%
+	box-sizing : border-box
+
+%st
+	border : 0px
+	padding : 0.4em
+	font-size : 1em
+	line-height : 1em !important
+	font-weight : 400 !important
+
+.search__table
+	position : relative
+	float : left
+	margin-right : 2em
+	margin-bottom : 0
+	th
+		@extend %st
+	td 
+		@extend %st
+
+.search__avatar
+	position : relative
+	float : left
+	margin-right : 2em
+	.search__avatar__img
+		@extend %default__img
+		padding : 1em
+		overflow : hidden
+
+

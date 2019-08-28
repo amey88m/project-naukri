@@ -1,0 +1,16 @@
+{
+    "$schema":"http://json-schema.org/draft-07/schema",
+    "$id":"/to-do-list.json",
+    "definitions": {
+        "to-do-list":{
+            "type":"object",
+            "properties": {
+                "listid":{"type":"integer"},
+                "day":{"type":"string"},
+                "tasks":{"type":"string"},
+                "assignto":{"type":"string"},
+                "status":{"type":"string"}
+            }
+        }
+    }
+}

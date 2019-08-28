@@ -1,0 +1,15 @@
+{
+  "name": "project_naukri",
+  "version": "1.0.0",
+  "description": "test project ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "A.M",
+  "license": "ISC",
+  "devDependencies": {
+    "qunit": "^2.7.1",
+    "raphael": "^2.2.8"
+  }
+}

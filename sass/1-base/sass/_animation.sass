@@ -1,0 +1,42 @@
+@keyframes bounceIn
+	0%
+		transform: translateY(10px)
+	25%
+		transform: translateY(0px)
+	50%
+		transform: translateY(-10px)
+	75%
+		transform: translateY(0px)
+	100%
+		transform: translateY(-10px)
+
+
+@keyframes slideup
+	0%
+		transform : translateY(0)
+	100%
+		transform : translateY(-20px)
+
+
+@keyframes fadeIn
+	0%
+		opacity : 0
+	50%
+		opacity : 0.5
+	100%
+		opacity : 1		
+
+.animate
+	animation-name : fadeIn
+	animation-fill-mode : both
+	
+
+.bounceIn
+	animation-name: bounceIn
+	animation-fill-mode: both
+	animation-iteration-count: infinite
+	animation-duration: 1.4s
+	transition: all 0.6s ease
+
+.fadeIn
+	animation-iteration-count : infinite

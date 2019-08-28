@@ -1,0 +1,95 @@
+.dis-b
+	display : block
+
+.dis-n
+	display : none!important
+
+
+.company_signup_btn, .send_otp_btn , .company_login_btn, .company_reset_password_btn, .reset_my_password
+	+border-radius(8px)
+	+box-shadow(-6px 2px 15px 2px #efefef)
+	display : block
+	padding : 0.4em 1em 	
+	color : $black
+	text-align : center
+	width : 150px
+	background-color : #333
+	color : $white
+.company_reset_password_btn, .reset_my_password
+	width : 300px
+	background-color : $fresh_green
+
+.RgNowBtn
+	+box-shadow( 1px 1px 1px 0px #545252 )
+	border : 0
+	padding : .4em 2em
+	+border-radius(4em)
+	margin-left : 1em
+	color : $white
+	background : $fresh_green
+	text-align : center
+
+.company_signup_wrap
+	background-color: $white
+.company_login_wrap
+	background-color: $white
+
+.company_signup_wrap , .company_login_wrap
+	+box-shadow(0px 1px 4px 0px #040404)
+	position : relative !important
+	margin : 35px auto
+	width : 992px
+	top: 50px
+	
+	h4
+		margin : 0 10px
+		text-align : center
+		line-height : 2em
+		text-transform : uppercase
+		border : 0
+		border-bottom : 1px
+		border-style : dotted
+		border-color : $black
+		box-sizing : border-box
+		display : block
+	form
+		padding : 2.56em 0
+	.forget_pass
+		display : block
+		font-size : 0.8em
+		color : $red
+		text-decoration : underline
+		line-height : 1.4em
+		text-align : center
+
+	
+.terms
+	font-size : 0.8em
+	color : $black
+	line-height : 1.2em
+	text-align : left
+	padding : 1em 	
+
+#response-wrap
+	transform : translateY(-100%)
+	transition : all 0.6s ease
+	position : absolute
+	top : 0
+	left : 0
+	right : 0
+	background-color : $fresh_pink
+	text-align : center
+	padding : 1em
+	z-index : 1
+	span
+		color : $black
+		margin-left : 1em
+	span.close
+		float : right
+		cursor : pointer
+
+#response-wrap.responseSuccess
+	background-color : $fresh_green
+
+#response-wrap.active
+		transform : translateY(0px)

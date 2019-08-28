@@ -1,0 +1,235 @@
+/////////////////profile ////////////
+
+
+.header-bg-rich
+	background-color : #fcad26
+.header-msg
+	display : block
+	text-align : center
+	line-height : 2em
+	margin-bottom : 2em
+	+user-select(none)
+	span
+		color : $white
+
+
+nav 
+	position : relative
+	.nav-div
+		padding-left : 1em
+		padding-right : 1em
+		cursor : pointer
+		position : absolute
+		top : 10px
+		right : 10px
+		width : auto
+		height : 50px
+		border : 1px solid #f2f2f2
+		background-color : $white
+		z-index : 2
+	.nav-list
+		display : inline-block
+		li
+			display : inline-block
+			margin-left : 2em
+			color : $black
+			font-size : 1em
+			line-height : 2.2em
+			a
+				display: block
+	.jobSearch
+		display : inline-block
+		display : block
+		float : right
+		margin-right : 6em
+	.myform
+		display : none		
+
+form
+	.searchjob
+		border : 1px solid #f2f2f2
+		padding : 1em 5.6em
+		display : inline-block
+		margin : 0
+		width : auto
+	.jobsearchbtn
+		margin : 0
+		border : 1px solid #f2f2f2 !important
+		cursor : pointer 
+		color : $black
+		display : inline-block
+		background-color : #fcad26
+		width : 100%
+		text-align: center
+		&:hover, &:focus
+			border : 0
+			background-color : #ffcb72
+			color : $black
+
+
+.bar
+	width : 40px
+	height : 1px
+	background : #000
+	display : block
+	position : relative
+
+.bar1
+	top : 1em
+.bar2
+	top : 1.5em
+.bar3
+	top : 2em	
+
+.bar-active
+	.bar1, .bar2
+		transform : rotate(45deg)
+		top : 26px
+	.bar3
+		transform : rotate(-45deg)
+		top : 26px
+
+.ctabs
+	position: relative
+	li
+		a
+			padding: 1em 1em
+
+.ctabs-active
+	color: #fcad26 !important
+
+%jobsec
+	display : block
+
+%article 
+	padding : 1.4em 0.6em
+
+
+#jobs-section
+	+clearfix
+	position : relative
+	margin-top : 2em
+	.candidate-article-wraper
+		@extent jobsec
+		width : calc(100% - 5%)
+		margin : 0 auto
+
+		article
+			background-color : $white
+			+box-shadow(-6px 2px 15px 2px #565656)
+			display : block
+			padding : 2em 1.6em
+			.job-title
+				font-size : 2em
+				color : $black
+				line-height : 1.6em
+				display : block	
+				.title
+					display : inline-block
+					text-transform : uppercase
+					margin : 0
+					font-size : 0.6em
+				small
+					font-size : 0.4em
+					color : $black
+					text-transform : unset
+		.desg
+			font-size : $base-font-size
+			line-height : 1.4em
+			color : $black
+			display : block
+			text-align : left
+		.desgHr
+			text-align : right	
+		p
+			font-size : 1em
+			line-height : 1.5em
+			color : $black
+			
+		.city
+			font-family : $font-stack-georgia
+			color : $black
+		.date
+			color : #f23f23
+		.date, .status
+			display : block
+			font-size : 1em
+			line-height : 1.5em
+			text-align : right
+			+user-select(none)
+		.contact-person
+			font-size : 1em
+			line-height : 1.5em
+			color : $black
+			text-align : right
+		.contact
+			position : relative
+			&:before
+				content : "\f095"
+				margin-right : 1em
+				font-family : fontAwesome
+				display : inline-block
+				padding : 1em
+				border-right: 1px solid $black
+		.hr_wrap
+			position : relative
+			text-align : right
+			display : block		
+
+		.skills
+			display : block
+			line-height : 3em
+			text-align : left
+
+
+
+// buttons 
+.contactHr
+	background-color : $white
+	text-align : center
+	display : inline-block
+	margin-right : 1em
+	color : $black
+	font-size : 0.8em
+	line-height : 2em
+	&:focus, &:hover
+		color : #555
+		border : 1px solid !important
+
+.apply
+	font-family : $font-stack-consolas
+	color : $black
+	border : 1px solid #d4d4d3
+	padding : 0.4em 2em
+	line-height : 1em
+	background-color : #f2f2f2
+	+border-radius(8px)
+
+.sendMyResumeToHR
+	color : $red
+	display : inline-block
+	line-height : 2em
+
+
+.opened
+	color : $fresh_green
+.closed
+	color : $red
+.ug
+	color : #5db3ff
+
+.avatar_hr
+	width : 50px
+	height : 50px
+	border : 1px solid #f2f2f2
+	padding : 0.4em
+	+border-radius(50%)	
+
+.apply__wrap
+	position : relative
+// icons
+.checked_i, .applyToJobBtn
+	display : inline-block
+.checked_i
+	color : $fresh_green
+	line-height : 1em

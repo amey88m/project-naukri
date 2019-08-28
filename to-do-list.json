@@ -1,0 +1,34 @@
+{
+    "$ref":"everyday-to-do-list.json#/definations/to-do-list",
+
+    "todo":
+            [
+                {
+                    "listid": "1",
+                    "day":"today",
+                    "tasks":"close min 1 pipeline",
+                    "assignto": "HR name",
+                    "status":"urgent",
+                    "last date": "August 14, 2019 : 5:29:pm"
+                },
+                {
+                    "listid": "2",
+                    "day":"today",
+                    "tasks":"close min 1 pipeline",
+                    "assignto": "HR name",
+                    "status":"no urgent",
+                    "last date": "August 15, 2019 : 5:29:pm"
+                },
+                {
+                    "listid": "3",
+                    "day":"tomorrow",
+                    "tasks":"check for line up interview`s",
+                    "assignto": "amey",
+                    "status":"open",
+                    "last date": "August 20, 2019 : 5:29:pm"
+                }
+                
+                
+            ]
+
+}

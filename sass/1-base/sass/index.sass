@@ -1,0 +1,75 @@
+%span
+	font-size : 1.6em
+	color : $black
+	background-color : #f1f1f1
+	text-transform : uppercase
+	line-height : 1.8em
+	display : block
+
+%backgroundImg
+	background-repeat : no-repeat
+	background-size : cover
+	background-position : center center
+
+.wrap-body
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: calc(100% - 100px)
+
+.index-wrap
+	+clearfix
+	box-sizing : border-box
+	border : 0px 
+	display : table
+	position : relative
+	margin : 0 10%
+	overflow : hidden
+	width : calc(100% - 20%)
+	.signupWrapper
+		border : 1px dotted $black
+		box-sizing : border-box
+		display : inline-block
+		margin : 10% auto
+		position : relative
+		text-align : center
+		width : calc(100% - 20%)
+		.w-or
+			font-size : 2em
+			background-color : #f1f1f1
+			padding : 0.4em 1em
+			z-index : 1
+		.candidate-wrap
+			border-bottom : 1px dotted $black
+			display : block
+			padding : 2em 0
+
+			span
+				@extend %span
+		.empl-wrap
+			display : block
+			padding : 2em 0
+
+			span
+				@extend %span
+	.loginImgWrapper
+		background-image : url('../images/woman-3060784_1920.jpg')
+		@extend %backgroundImg		
+		box-sizing : border-box
+		display : table-cell		
+		vertical-align : middle
+
+.btn-candidate-signup
+	background-color : $white
+	border : 1px solid $black
+	color : $black
+	padding : 1em
+.btn-employer-signup
+	background-color : $black
+	border : 1px solid $white
+	color : $white
+	padding : 1em
+
+
+
