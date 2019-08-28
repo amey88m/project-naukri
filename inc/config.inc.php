@@ -1,7 +1,7 @@
 <?php
 
 # set-default root;
-define("root" , $_SERVER['DOCUMENT_ROOT'] . "/project_naukri/");
+define("root" , $_SERVER['DOCUMENT_ROOT'] . "/project_mynaukri/");
 
 # user-name & password for phpmailer;
 # consider our default SMTP server - email address is = user;
