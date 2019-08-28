@@ -1,6 +1,6 @@
-# mynkri
+# project mynkri
 
-# This is simple project for `finding jobs`.
+# This is simple project for `jobs searching`.
 
 # I used here bootstrap for responsiveness & sass related frame.
 
@@ -10,7 +10,7 @@
 
 # How it works?
 
------------------
+----------------
 I have created 
 1) candidate signup & login pg
 2) employer signup & login pg
@@ -21,4 +21,3 @@ one more interesting view is they can check available jobs with respective HR`s 
 2) after signup, employer will login and enter into their Admin panel. Once they reached to the admin panel they have to create a their own 'HR' team.
 One interesting feature in it is they can check all HR's activity through 'birdview tab'.
 
-# authorization & authentication is done using simple token
