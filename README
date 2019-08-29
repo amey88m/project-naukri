@@ -15,9 +15,11 @@ I have created
 1) candidate signup & login pg
 2) employer signup & login pg
 
-1) after signup, candidate can login with their respective email & password. They will enter into their profile page where they can check for latest jobs, search for jobs, apply on it.
+1) candidate: after signup, candidate can login with their respective email & password. They will enter into their profile page where they can check for latest jobs, search for jobs, apply on it.
 one more interesting view is they can check available jobs with respective HR`s info and candidate can directly contact to HR from email/phone.
 
-2) after signup, employer will login and enter into their Admin panel. Once they reached to the admin panel they have to create a their own 'HR' team.
+2) Employer: after signup, employer will login and enter into their Admin panel. Once they reached to the admin panel they have to create a their own 'HR' team.
 One interesting feature in it is they can check all HR's activity through 'birdview tab'.
+`Hr team` cann't remain login if their team head gets logoff.
 
+# authorization & authentication is done using simple token.
