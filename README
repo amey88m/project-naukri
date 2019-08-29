@@ -11,20 +11,18 @@
 # How it works?
 
 ----------------
-I have created 
-<<<<<<< HEAD
-1) candidate signup & login pg  http://127.0.0.1/project_naukri/candidate-signup & http://127.0.0.1/project_naukri/login
-2) employer signup & login pg  http://127.0.0.1/project_naukri/empl-signup & http://127.0.0.1/project_naukri/empl-login
-3) Admin panel.
-=======
+
+I have created
+
 1) candidate signup & login pg  
    http://127.0.0.1/project_naukri/candidate-signup
    http://127.0.0.1/project_naukri/login
+
 2) employer signup & login pg  
    http://127.0.0.1/project_naukri/empl-signup
    http://127.0.0.1/project_naukri/empl-login
+
 3) Admin panel
->>>>>>> 83ae97977fd878dddd438a49371087778040bc70
 
 1) candidate: after signup, candidate can login with their respective email & password. They will enter into their profile page where they can check for latest jobs, search for jobs, apply on it.
 one more interesting view is they can check available jobs with respective HR`s info and candidate can directly contact to HR from email/phone.
