@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 28, 2019 at 03:11 PM
+-- Generation Time: Aug 29, 2019 at 05:17 PM
 -- Server version: 10.1.35-MariaDB
 -- PHP Version: 7.2.9
 
@@ -143,26 +143,6 @@ CREATE TABLE `job_apply` (
   `applydate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `job_apply`
---
-
-INSERT INTO `job_apply` (`applyId`, `name`, `email`, `canId`, `jobId`, `HRId`, `applydate`) VALUES
-(57, 'yojana', 'yojana@gmail.com', 89, 11, 2, '2018-05-24 10:52:04'),
-(59, 'Shraddha', 'shraddha@gmail.com', 47, 14, 1, '2018-10-05 04:59:08'),
-(60, 'Shraddha', 'shraddha@gmail.com', 47, 8, 2, '2018-10-05 05:12:20'),
-(61, 'Shraddha', 'shraddha@gmail.com', 47, 12, 1, '2018-10-05 07:31:07'),
-(65, 'yojana', 'yojana@gmail.com', 89, 14, 1, '2018-10-17 03:17:43'),
-(66, 'yojana', 'yojana@gmail.com', 89, 7, 2, '2018-10-17 03:23:28'),
-(67, 'yojana', 'yojana@gmail.com', 89, 12, 1, '2018-10-17 03:33:01'),
-(68, 'yojana', 'yojana@gmail.com', 89, 10, 2, '2019-01-18 10:05:06'),
-(69, 'Shraddha', 'shraddha@gmail.com', 47, 10, 2, '2019-07-12 04:14:01'),
-(70, 'Aska', 'aska@gmail.com', 90, 14, 1, '2019-07-26 15:18:00'),
-(71, 'Shraddha', 'shraddha@gmail.com', 47, 7, 2, '2019-07-30 09:32:08'),
-(72, 'Aska', 'aska@gmail.com', 90, 10, 2, '2019-07-30 14:50:47'),
-(73, 'Aska', 'aska@gmail.com', 90, 12, 31, '2019-07-30 15:38:49'),
-(74, 'amey', 'amdotdeveloper@gmail.com', 93, 14, 31, '2019-08-03 12:37:06');
-
 -- --------------------------------------------------------
 
 --
@@ -188,15 +168,15 @@ CREATE TABLE `job_posted_by_hr` (
 --
 
 INSERT INTO `job_posted_by_hr` (`jobId`, `company`, `designation`, `job_des`, `job_status`, `no_of_open`, `job_location`, `job_city`, `HRId`, `job_posted_on`, `skills`) VALUES
-(1, 'ABC', 'HR Executive', 'We are looking for candidate who are freshers and looking to do career in HR.\r\nWe glad to inform you, if you are stared then this will be the best start to your career. \r\nSalary : 6,000 pm\r\ncontract : No\r\nTarget : Yes', 'urgent', 2, 'Mumbai', 'Mumbai', 1, '2018-05-03 18:47:44', 'headhunting,\'team coordination\',target'),
+(1, 'ABC', 'HR Executive', 'We are looking for candidate who are freshers and looking to do career in HR.\r\nWe glad to inform you, if you are stared then this will be the best start to your career. \r\nSalary : 6,000 pm\r\ncontract : No\r\nTarget : Yes\r\nLorem ipsum dolor sit amet consectetur adipisicing elit. Harum iste magnam veritatis nisi expedita, placeat ratione praesentium! Quasi in reprehenderit mollitia dignissimos qui adipisci, sint doloremque distinctio eveniet eos tempore.\r\nQuis est iste alias numquam incidunt vero eligendi, sed aspernatur labore hic assumenda ipsam illum voluptatem saepe in! Ipsam odio sunt omnis iure alias? Neque voluptate at porro accusantium laborum?\r\nVoluptate ipsam libero obcaecati magnam, quibusdam fuga consequuntur repudiandae quod excepturi ab eveniet, natus saepe labore deserunt adipisci non facilis. Nostrum excepturi aliquid impedit voluptatem ducimus vitae illo iure aut.', 'urgent', 2, 'Mumbai', 'Mumbai', 1, '2018-05-03 18:47:44', 'headhunting,\'team coordination\',target'),
 (2, 'ABC', 'Hr Team Leader', 'We are looking experience person for HR Team leader. We are looking for \r\nminimum 1 year of experience in same profile.\r\nIf you think you are the fit for the position. Just click to apply button. \r\n<u>Note : No walk in drives</u>\r\n\r\nSalary : 20000 - 30000\r\ncontract : Yes\r\ncontract period : 1 year\r\n\r\n\r\n', 'open', 1, 'Mumbai', 'Mumbai', 1, '2018-05-03 18:52:48', 'html,css,javascript'),
-(7, 'XYZ LTD', 'hr representative', 'hello, I am representative of abc company and we are hiring for the xyz ltd company.', 'open', 10, 'mumbai', 'mumbai', 2, '2018-05-09 21:47:19', 'html,sass,bootstrap,javascript,'),
-(8, 'XYZ LTD', 'hr representative', 'hello, I am representative of abc company and we are hiring for the xyz ltd company.', 'open', 10, 'mumbai', 'mumbai', 2, '2018-05-09 21:48:54', 'html,sass,css'),
-(10, 'XYZ LTD', 'hr corodinator', 'hlsjlfjs', 'open', 4, 'mumbai', 'mumbai', 2, '2018-05-09 22:16:13', '\'head hunting\',\'fluent english\''),
-(11, 'PQR LTD', 'sales', 'Hello, I we are having job opening for the sales coordinator. \r\nPlease check the below details.', 'closed', 15, 'U.S', 'Florida', 2, '2018-05-09 22:21:30', '\'fluent english\', enthusiasm, \'smart work\''),
-(12, 'ABC', 'sales', 'hello this is sales job', 'open', 1, 'U.S.A', 'U.S.A', 1, '2018-05-09 22:23:16', '\'fluent english communication must\',enthusiasm,\'smart work\''),
-(13, 'KPT', 'hr corodinator', 'Hello, This is testing job. Please ignore. Thank you.', 'closed', 2, 'U.S', 'Florida', 1, '2018-05-10 07:16:01', '\'fluent english communication must\',\r\nenthusiasm, \'smart work\''),
-(14, 'ABC LTD', 'Full Stack Web developer, Front End Web developer', 'Hello, We have an urgent opening for the post of \'Front End Developer\' and \'Full Stack Web developer\'. We have requirement as follow.\r\nQualification : B.Tech, M.C.A, B.C.A, B.com\r\nNo of position : 3.\r\n(2 - Front End Web developer and 1 - Full Stack Web developer)\r\nWe are looking for an candidate who have good understanding of code. Hands on Experience will be advantage.\r\nWe can handle individual activity.\r\nSalary : discuss letter.\r\n\r\n', 'urgent', 3, 'U.S, mumbai', 'mumbai', 1, '2018-05-12 18:32:43', 'html,css,sass,js,php,sql,\'server side scripting\',\'security with php\',nosql');
+(7, 'XYZ LTD', 'hr representative', 'hello, I am representative of abc company and we are hiring for the xyz ltd company.\r\n\r\nLorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aliquid ullam, repudiandae consectetur deserunt temporibus animi vitae fuga? Facere modi accusamus inventore dolorum maiores! Commodi molestias impedit doloribus quo rerum!', 'open', 10, 'mumbai', 'mumbai', 2, '2018-05-09 21:47:19', 'html,sass,bootstrap,javascript,'),
+(8, 'XYZ LTD', 'hr representative', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aliquid ullam, repudiandae consectetur deserunt temporibus animi vitae fuga? Facere modi accusamus inventore dolorum maiores! Commodi molestias impedit doloribus quo rerum!company.', 'open', 10, 'mumbai', 'mumbai', 2, '2018-05-09 21:48:54', 'html,sass,css'),
+(10, 'XYZ LTD', 'hr corodinator', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aliquid ullam, repudiandae consectetur deserunt temporibus animi vitae fuga? Facere modi accusamus inventore dolorum maiores! Commodi molestias impedit doloribus quo rerum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aliquid ullam, repudiandae consectetur deserunt temporibus animi vitae fuga? Facere modi accusamus inventore dolorum maiores! Commodi molestias impedit doloribus quo rerum!\r\n\r\nLorem ipsum dolor sit amet consectetur adipisicing elit. Harum iste magnam veritatis nisi expedita, placeat ratione praesentium! Quasi in reprehenderit mollitia dignissimos qui adipisci, sint doloremque distinctio eveniet eos tempore.\r\nQuis est iste alias numquam incidunt vero eligendi, sed aspernatur labore hic assumenda ipsam illum voluptatem saepe in! Ipsam odio sunt omnis iure alias? Neque voluptate at porro accusantium laborum?\r\nVoluptate ipsam libero obcaecati magnam, quibusdam fuga consequuntur repudiandae quo', 'open', 4, 'mumbai', 'mumbai', 2, '2018-05-09 22:16:13', '\'head hunting\',\'fluent english\''),
+(11, 'PQR LTD', 'sales', 'Hello, I we are having job opening for the sales coordinator. \r\nPlease check the below details.\r\n\r\nLorem ipsum dolor sit amet consectetur adipisicing elit. Harum iste magnam veritatis nisi expedita, placeat ratione praesentium! Quasi in reprehenderit mollitia dignissimos qui adipisci, sint doloremque distinctio eveniet eos tempore.\r\nQuis est iste alias numquam incidunt vero eligendi, sed aspernatur labore hic assumenda ipsam illum voluptatem saepe in! Ipsam odio sunt omnis iure alias? Neque voluptate at porro accusantium laborum?\r\nVoluptate ipsam libero obcaecati magnam, quibusdam fuga consequuntur repudiandae quod excepturi ab eveniet, natus saepe labore deserunt adipisci non facilis. Nostrum excepturi aliquid impedit voluptatem ducimus vitae illo iure aut.', 'closed', 15, 'U.S', 'Florida', 2, '2018-05-09 22:21:30', '\'fluent english\', enthusiasm, \'smart work\''),
+(12, 'ABC', 'sales', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iste magnam veritatis nisi expedita, placeat ratione praesentium! Quasi in reprehenderit mollitia dignissimos qui adipisci, sint doloremque distinctio eveniet eos tempore.\r\nQuis est iste alias numquam incidunt vero eligendi, sed aspernatur labore hic assumenda ipsam illum voluptatem saepe in! Ipsam odio sunt omnis iure alias? Neque voluptate at porro accusantium laborum?\r\nVoluptate ipsam libero obcaecati magnam, quibusdam fuga consequuntur repudiandae quod excepturi ab eveniet, natus saepe labore deserunt adipisci non facilis. Nostrum excepturi aliquid impedit voluptatem ducimus vitae illo iure aut.', 'open', 1, 'U.S.A', 'U.S.A', 1, '2018-05-09 22:23:16', '\'fluent english communication must\',enthusiasm,\'smart work\''),
+(13, 'KPT', 'hr corodinator', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iste magnam veritatis nisi expedita, placeat ratione praesentium! Quasi in reprehenderit mollitia dignissimos qui adipisci, sint doloremque distinctio eveniet eos tempore.\r\nQuis est iste alias numquam incidunt vero eligendi, sed aspernatur labore hic assumenda ipsam illum voluptatem saepe in! Ipsam odio sunt omnis iure alias? Neque voluptate at porro accusantium laborum?\r\nVoluptate ipsam libero obcaecati magnam, quibusdam fuga consequuntur repudiandae quod excepturi ab eveniet, natus saepe labore deserunt adipisci non facilis. Nostrum excepturi aliquid impedit voluptatem ducimus vitae illo iure aut.', 'closed', 2, 'U.S', 'Florida', 1, '2018-05-10 07:16:01', '\'fluent english communication must\',\r\nenthusiasm, \'smart work\''),
+(14, 'ABC LTD', 'Full Stack Web developer, Front End Web developer', 'Hello, We have an urgent opening for the post of \'Front End Developer\' and \'Full Stack Web developer\'. We have requirement as follow.\r\nQualification : B.Tech, M.C.A, B.C.A, B.com\r\nNo of position : 3.\r\n(2 - Front End Web developer and 1 - Full Stack Web developer)\r\nWe are looking for an candidate who have good understanding of code. Hands on Experience will be advantage.\r\nWe can handle individual activity.\r\nSalary : discuss letter.\r\nLorem ipsum dolor sit amet consectetur adipisicing elit. Harum iste magnam veritatis nisi expedita, placeat ratione praesentium! Quasi in reprehenderit mollitia dignissimos qui adipisci, sint doloremque distinctio eveniet eos tempore.\r\nQuis est iste alias numquam incidunt vero eligendi, sed aspernatur labore hic assumenda ipsam illum voluptatem saepe in! Ipsam odio sunt omnis iure alias? Neque voluptate at porro accusantium laborum?\r\nVoluptate ipsam libero obcaecati magnam, quibusdam fuga consequuntur repudiandae quod excepturi ab eveniet, natus saepe labore', 'urgent', 3, 'U.S, mumbai', 'mumbai', 1, '2018-05-12 18:32:43', 'html,css,sass,js,php,sql,\'server side scripting\',\'security with php\',nosql');
 
 -- --------------------------------------------------------
 
@@ -281,7 +261,7 @@ ALTER TABLE `hrlogin`
 -- AUTO_INCREMENT for table `job_apply`
 --
 ALTER TABLE `job_apply`
-  MODIFY `applyId` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
+  MODIFY `applyId` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `job_posted_by_hr`
