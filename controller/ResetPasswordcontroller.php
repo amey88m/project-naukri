@@ -16,6 +16,7 @@ class ResetPasswordcontroller extends Controller
 
 		public function _reset_password() 
 		{
+			error_reporting(0);
 			self::loadModel('SessionModel');
 			self::loadModel('email/Email');
 			self::checkUserRegistration();
